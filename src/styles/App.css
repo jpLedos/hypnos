@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;400;700&family=Bitter:wght@200;400;700&display=swap');
+
+*,
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width : 1080px;
+    margin: auto;
+
+}
+
+nav{
+    z-index: 10;
+}
+
+.nav-item {
+    font-family: 'Bitter', serif;
+}
+
+
+
+.text-header {
+    font-family: 'Arima Madurai', cursive;
+    text-align: center;
+    transform: translate(0,200px);
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #e6e6e6f1;
+    background-color: #0d6dfd6b;
+    width: 70%;
+    padding: 5px;
+    border-radius:15px
+
+}
+
+h1, h2 {
+    padding-top: 25px;
+    font-size:3rem;
+    font-weight: 1000;
+    letter-spacing:6px; 
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+}
+
+h2 {
+    font-family: "Arima Madurai" , cursive ;
+    font-size:2rem;
+    font-weight: 400;
+    letter-spacing:4px;
+}
+
+suitev {
+    z-index: 1000;
+}
+
+ul {
+list-style-type: none;
+}
+li {
+    z-index: 0;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+
+
+footer {
+    margin-bottom: 30px;
+    padding: 25px;
+    text-align: center;
+  }
+
+
+  form {
+    position: relative;
+    margin: 30px auto;
+    max-width:950px;
+    text-align: left;
+}
+
+
+form div {
+    margin: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin:5px auto;
+    line-height : 22px;
+    letter-spacing: 1.5px;
+    color: rgb(59, 59, 59);
+    background-color:#cecece85 ;
+    border-radius: 8px 0 8px 0;
+}
+
+.date-filter-container {
+    position: sticky;
+    top: 120px;
+    margin-top: 18px;
+    width : 60%;
+    min-width: 300px;;
+    background-color: #cecece ;
+    margin: 8px auto;
+    padding: 12px 25px;
+    border-radius:12px;
+}
+
+.date-filter {
+    width: 180px;
+    font-size: 16px;
+    padding: 2px 6px 2px 20px;
+    margin:auto;
+    line-height : 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color:#fafafa ;
+}
+
+.btn-contact { 
+    padding: 6px 10px; 
+    margin: 12px 0 8px 70%;
+    border-radius: 8px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+}
+
+.btn-contact:hover {
+    font-weight: 700;
+    border : 2px solid #262626 ;
+}
+
+
+.msg {
+    margin: auto;
+    margin-top: 5px;
+    max-width:450px;
+    height: 40px;
+
+}
+
+.msgSuccess {
+    text-align: center;
+    font-size: 18px;
+}
+
+.msgError {
+    color : rgba(255, 0, 0, 0.836);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing:1px;
+}
+
+
+.copyright{
+    font-family: "Helvetica Neue";
+    font-weight : 400;
+    text-decoration: none;
+    color :darkgray;
+  }
+
+  .copyright.link:hover {
+    font-weight: 600;
+    color :darkgray;
+  }
+
+  .social-icons {
+    width : 25%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logo-social {
+    border-radius: 10%;
+  }
+  
+  .logo-social:hover{
+    background: #c2c2c28c ;
+  }
+
+.form-button {
+    position : absolute;
+    bottom : -100px;
+    right : 80px;
+}
+
+
+.icon {
+    width :15px;
+    height: 15px;
+    position : relative;
+    top : -5px;
+}
+
+
+
+.recipe-description {
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 12px;
+    padding-bottom: 25px;;
+    position: relative;
+
+}
+
+.recipe-description::before {
+	position: absolute;
+    content : "...";
+	inset-block-end: 0; /* "bottom" */
+	inset-inline-end: 0; /* "right" */
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+    min-height: 400px;
+    flex-wrap: wrap; 
+    margin: 30px 25px 5px 25px;
+    padding: 15px;
+    background-image:
+     url("../images/spa-r.jpg") ;
+     border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    width: 220px;
+    border-radius: 10px 10px 5px 5px !important;
+    margin: 15px 15px 15px 15px;
+    padding-bottom: 12px;
+    box-shadow: 10px 8px 5px #7e858f70;
+}
+
+@media screen and (max-width: 768px) {
+    .ingredients-container{
+        min-height : 200px;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    .card-container {
+        margin : auto;
+        padding: 5px;
+        min-width: 300px;
+    }
+    .card {
+        margin: 15px 5px 15px 5px;
+    }
+} 
+
+
+
+
+.suite {
+    box-shadow: 10px 8px 5px #7e858f38; 
+}
+
+.resa-hotel{
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+
+.resa-suite {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1.2rem;
+    letter-spacing:1.5px;
+}
+
+.justify {
+    text-align: justify; 
+}
+
+.card-title {
+    text-align: center;
+    height: 40px; 
+    font-family: "Arima Madurai" , cursive, serif ;
+    font-weight: bold;
+    padding-top: 15px;;
+}
+
+.card-text {
+    font-family:'Roboto', sans-serif;;
+    min-height: 100px;
+    margin-top: 18px 8px;
+    text-align: justify;
+    color: rgb(77, 77, 77);
+} 
+
+
+.comments-text {
+    font-family:'Roboto', sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 0.9rem;
+}
+
+.highlight-125  {
+    display :block;
+    height : 125px;
+    width : 125px;
+    margin-Right : 10px ;
+    margin : auto  ;
+    object-fit : cover;
+    border-radius : 10px;
+}
+
+.selectedImage {
+    border :rgba(255, 0, 0, 0.836);
+ 
+}
