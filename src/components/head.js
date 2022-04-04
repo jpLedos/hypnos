@@ -12,8 +12,6 @@ const nextHead= () =>  {
             <meta name="copyright" content="jp Ledos" />
             <meta name="robots" content="noindex"/>
             <meta httpEquiv="cache-control" content="no-cache"/>
-
-
             <title>Hypnos Séjours</title>
             <link rel="shortcut icon" type="image/x-icon" href='images/jsavicon.png' />
         </Head>
